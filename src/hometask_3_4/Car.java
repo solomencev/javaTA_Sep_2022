@@ -4,6 +4,24 @@ public class Car {
     Car(){
         System.out.println("Car is created");
     }
+
+    Car(String color1, String gear1, String manufacturer1, double mileage1, int doors1, int speed1){
+        color = color1;
+        gear = gear1;
+        manufacturer = manufacturer1;
+        mileage = mileage1;
+        doors = doors1;
+        speed = speed1;
+    }
+
+    Car (String color2, String gear2, String manufacturer2, double mileage2){
+        this(color2, gear2, manufacturer2, mileage2, 0, 0);
+    }
+
+    Car (double mileage3, int doors3, int speed3){
+        this(null, null, null, mileage3, doors3, speed3);
+    }
+
     String color;
     String gear;
     String manufacturer;
