@@ -7,6 +7,6 @@ public class Parrot  extends Bird{
         this.foot = 2;
         this.wings = 2;
         this.isUnderwater = false;
-        this.isHungry = true;
+        this.setHungry(true);
     }
 }

@@ -7,7 +7,7 @@ public class Hippopotamus extends Mammal{
         this.foot = 4;
         this.wings = 0;
         this.isUnderwater = true;
-        this.isHungry = true;
+        this.setHungry(true);
     }
 
     public void feed(){

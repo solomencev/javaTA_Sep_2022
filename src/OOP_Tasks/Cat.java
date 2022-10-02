@@ -7,6 +7,6 @@ public class Cat extends Mammal{
         this.foot = 4;
         this.wings = 0;
         this.isUnderwater = false;
-        this.isHungry = true;
+        this.setHungry(true);
     }
 }
