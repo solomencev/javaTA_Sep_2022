@@ -5,7 +5,6 @@ public class Hippopotamus extends Mammal{
         this.name = "Hippopotamus";
         this.sound = "Mu-uu";
         this.foot = 4;
-        this.wings = 0;
         this.isUnderwater = true;
         this.setHungry(true);
     }

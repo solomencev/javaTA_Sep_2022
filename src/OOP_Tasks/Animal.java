@@ -4,7 +4,7 @@ public abstract class Animal {
     protected String name;
     protected String sound;
     protected int foot;
-    protected int wings;
+
     protected boolean isUnderwater;
     private boolean isHungry;
 
@@ -30,14 +30,6 @@ public abstract class Animal {
 
     public void setFoot(int foot) {
         this.foot = foot;
-    }
-
-    public int getWings() {
-        return this.wings;
-    }
-
-    public void setWings(int wings) {
-        this.wings = wings;
     }
 
     public boolean isUnderwater() {
@@ -71,7 +63,6 @@ public abstract class Animal {
         System.out.println("Name " + this.getName());
         System.out.println("Sound " + this.getSound());
         System.out.println("Foot " + this.getFoot());
-        System.out.println("Wings " + this.getWings());
         System.out.println("Is underwater? " + this.isUnderwater());
         System.out.println("Is hungry? " + this.isHungry());
     }
