@@ -62,7 +62,7 @@ public abstract class Animal {
 
     public void feed(){
         if(this.isHungry() == true) {
-            System.out.println(this.getName() + " ate");
+            System.out.println(this.getName() + " is eating");
             this.setHungry(false);
         } else System.out.println(this.getName() + " does not want to eat");
     }
