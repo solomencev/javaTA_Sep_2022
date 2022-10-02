@@ -1,4 +1,4 @@
-package OOP_Tasks;
+package OOP_Tasks3_4_5;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,24 +6,10 @@ public class Main {
         animal.showInfo();
         animal.feed();
         animal.makeSound();
-//        Cat cat = new Cat();
-//        cat.makeSound();
-//        cat.showInfo();
-//        cat.feed();
-//        cat.showInfo();
-//        cat.feed();
-//
-//        Hippopotamus hippopotamus = new Hippopotamus();
-//        hippopotamus.feed();
-//        hippopotamus.feed();
-//        hippopotamus.makeSound();
-//        hippopotamus.showInfo();
-//
-//        Parrot parrot = new Parrot();
-//        parrot.fly();
-//        parrot.makeSound();
-//        parrot.feed();
-//        parrot.showInfo();
+
+        Dog dog = new Dog("Lucky");
+        dog.run();
+
     }
     public static Animal createAnimal(){
         if(Math.random() <= 0.4){
@@ -38,6 +24,35 @@ public class Main {
             Animal parrot = new Parrot();
             System.out.println("Parrot is created");
             return parrot;
+        }
+    }
+}
+
+class Dog {
+    private String name;
+    private Foot foot;
+
+    {
+        name = "";
+        foot = new Foot();
+        System.out.println("\nClass instance created");
+    }
+
+    Dog(){
+
+    }
+
+    Dog(String name) {
+        this.name = name;
+    }
+
+    void run(){
+        foot.run();
+    }
+
+    class Foot{
+        void run(){
+            System.out.println("Dog " + name + " is running");
         }
     }
 }
