@@ -9,6 +9,7 @@ public class Main {
 
         Dog dog = new Dog("Lucky");
         dog.run();
+        System.out.println(Dog.Stat.counter);
 
     }
     public static Animal createAnimal(){
@@ -29,13 +30,14 @@ public class Main {
 }
 
 class Dog {
-    private String name;
-    private Foot foot;
+    private String name = "";
+    private Foot foot = new Foot();
+    private int id = -1;
 
     {
         name = "";
-        foot = new Foot();
-        System.out.println("\nClass instance created");
+        Stat.counter++;
+        id = ++Stat.id;
     }
 
     Dog(){
@@ -54,5 +56,10 @@ class Dog {
         void run(){
             System.out.println("Dog " + name + " is running");
         }
+    }
+
+    static class Stat {
+        public static int counter = 0;
+        public static int id = 0;
     }
 }
