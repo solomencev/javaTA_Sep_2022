@@ -23,7 +23,7 @@ public class AnimalToFile {
        Parrot.makeSound();
 
        try (ObjectOutputStream out = new ObjectOutputStream(
-               new FileOutputStream("D:\\IdeaProjects\\Java for TA_Sep_2022\\src"))) {
+                   new FileOutputStream("D:\\IdeaProjects\\Java for TA_Sep_2022\\src\\animals.txt"))) {
            out.writeObject(new Animal[] {Cat, Parrot});
        } catch (FileNotFoundException e) {
            e.printStackTrace();

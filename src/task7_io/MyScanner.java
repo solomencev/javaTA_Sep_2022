@@ -19,6 +19,7 @@ public class MyScanner {
                     break;
                 case 2:
                     System.out.println("Option2: Read all objects from file");
+                    ReadAnimal read = new ReadAnimal("D:\\IdeaProjects\\Java for TA_Sep_2022\\src\\animals.txt");
                     break;
 
                 case 3:
