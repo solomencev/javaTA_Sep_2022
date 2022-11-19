@@ -15,6 +15,8 @@ public class EmailValidator {
                 System.out.println("Incorrect E-mail");
 
             }
+        } catch (InputMismatchException e) {
+            System.out.println("Incorrect E-mail Exception" + e);
         }
 
     }
