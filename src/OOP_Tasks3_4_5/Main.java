@@ -29,7 +29,7 @@ public class Main {
     }
 }
 
-class Dog {
+public class Dog {
     private String name = "";
     private Foot foot = new Foot();
     private int id = -1;
