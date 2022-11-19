@@ -1,5 +1,6 @@
 package task10_annotations;
 
+import java.util.InputMismatchException;
 import java.util.regex.Pattern;
 
 public class DataValidator {
@@ -14,6 +15,8 @@ public class DataValidator {
                 System.out.println("Incorrect Date");
 
             }
+        } catch (InputMismatchException e) {
+            System.out.println("Incorrect E-mail Exception" + e);
         }
     }
 }
