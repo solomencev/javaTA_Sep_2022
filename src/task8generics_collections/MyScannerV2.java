@@ -40,15 +40,30 @@ public class MyScannerV2 {
                     break;
                 case 2:
                     System.out.println("Read all objects from file");
-                    ReadAnimal read = new ReadAnimal("C:\\data\\projects\\Java_L1\\files\\planets.txt");
+                    ReadAnimal read = new ReadAnimal("TO DO");
                     break;
 
+                case 3:
+                    System.out.println("Quit");
+                    scanner.close();
+                    return;
 
+                case 4:
+                    System.out.println("Add object, input Integer key");
+
+                    while (scanner.hasNextLine()) {
+                        String name = scanner.next();
+                        System.out.println(myHashSet.add(name));
+                        break;
+                    }
+
+                    break;
 
                 default:
                     throw new MyException("Invalid argument. \n" +
                             "Input '1' for print to file. \n" +
-                            "Input '2' for read from file. \n");
+                            "Input '2' for read from file. \n" +
+                            "Input '3' for Quit. Input '4' for AddObject. \n");
 
             }
         }
