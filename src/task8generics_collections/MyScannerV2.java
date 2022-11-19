@@ -40,7 +40,7 @@ public class MyScannerV2 {
                     break;
                 case 2:
                     System.out.println("Read all objects from file");
-                    ReadAnimal read = new ReadAnimal("TO DO");
+                    ReadAnimal read = new ReadAnimal("D:\\IdeaProjects\\Java for TA_Sep_2022\\src\\animals.txt");
                     break;
 
                 case 3:
@@ -59,11 +59,37 @@ public class MyScannerV2 {
 
                     break;
 
+
+                case 5:
+                    System.out.println("Remove object");
+                    String name = scanner.next();
+                    System.out.println(myHashSet.remove(name));
+                    break;
+
+                case 6:
+                    System.out.println("Read all");
+                    for (String item : myHashSet) {
+                        System.out.println(item);
+                    }
+                    break;
+
+                case 7:
+                    System.out.println("Update object: input value that will be replaced");
+                    String nameUpdate = scanner.next();
+                    System.out.println(myHashSet.remove(nameUpdate));
+                    System.out.println("Update object: input new value");
+                    String newName = scanner.next();
+                    System.out.println(myHashSet.add(newName));
+                    break;
+
                 default:
                     throw new MyException("Invalid argument. \n" +
                             "Input '1' for print to file. \n" +
                             "Input '2' for read from file. \n" +
-                            "Input '3' for Quit. Input '4' for AddObject. \n");
+                            "Input '3' for Quit. Input '4' for AddObject. \n" +
+                            "Input '5' for Remove object. \n" +
+                            "Input '6' for Read all. \n" +
+                            "Input '7' for Update object.");
 
             }
         }
